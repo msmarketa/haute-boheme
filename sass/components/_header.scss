@@ -42,6 +42,11 @@
         font-size: 1.4em;
         letter-spacing: 30px;
         animation: fadeInLeft 1.5s ease-out;
+
+        @include respond(phone) {
+            font-size: 1.2em;
+            letter-spacing: 15px;
+        }
     }
 
     &__tagline {
@@ -49,5 +54,10 @@
         letter-spacing: 13px;
         font-size: 0.65em;
         animation: fadeInRight 1.5s ease-out;
+
+        @include respond(phone) {
+            font-size: 0.5em;
+            letter-spacing: 10px;
+        }
     }
 }

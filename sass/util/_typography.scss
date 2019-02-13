@@ -13,15 +13,27 @@
     &:hover {
         text-shadow: 0.5rem 1rem 2rem rgba(0,0,0,0.2);
     }
+
+    @include respond(phone) {
+        font-size: 1.3em;
+    }
 }
 
 .heading-description {
     font-size: 1.5em;
     font-weight: $font-bold;
+
+    @include respond(phone) {
+        font-size: 1.1em;
+    }
 }
 
 .paragraph {
     line-height: 1.5em;
+
+    @include respond(phone) {
+        font-size: 0.9em;
+    }
 
     &:not(:last-child) {
         margin-bottom: 3rem;

@@ -23,6 +23,10 @@ body {
     font-weight: $font-regular;
     color: $color-text;
     padding: 30px;
+
+    @include respond(tab) {
+        padding: 0;
+    }
 }
 
 .center-text {
@@ -35,6 +39,10 @@ body {
 
 .margin-bottom-medium {
     margin-bottom: 3rem;
+
+    @include respond(tab) {
+        margin-bottom: 1rem;
+    }
 }
 
 .margin-bottom-small {
@@ -47,4 +55,8 @@ body {
 
 .margin-top-medium {
     margin-top: 3rem;
+
+    @include respond(tab) {
+        margin-bottom: 1rem;
+    }
 }

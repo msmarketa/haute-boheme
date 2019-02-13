@@ -13,12 +13,31 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include respond(screen) {
+                margin-right: 0;
+                margin-bottom: 2rem;
+            }
+        }
+
+        @include respond(screen) {
+            width: 40% !important;
+            margin: 0 5%;
+        }
+
+        @include respond(phone) {
+            width: 90% !important;
+            margin: 0 5%;
         }
     }
 
     .col-1-of-2 {
         @extend %col;
         width: calc((100% - #{$gutter-horizontal}) / 2);
+
+        @include respond(tab) {
+            width: 90% !important;
+        }
     }
 
     .col-1-of-3 {
