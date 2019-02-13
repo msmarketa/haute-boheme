@@ -1,0 +1,29 @@
+.heading-about {
+    font-size: 1.8em;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        120deg,
+        $color-primary-dark,
+        rgba($color-primary-light, 0.7));
+    display: inline-block;
+    color: transparent;
+    -webkit-background-clip: text;
+
+    &:hover {
+        text-shadow: 0.5rem 1rem 2rem rgba(0,0,0,0.2);
+    }
+}
+
+.heading-description {
+    font-size: 1.5em;
+    font-weight: $font-bold;
+}
+
+.paragraph {
+    line-height: 1.5em;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
