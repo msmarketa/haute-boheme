@@ -163,7 +163,7 @@
     top: 40px;
     left: 40px; }
     .header__logo-box img {
-      width: 200px; }
+      width: 100px; }
   .header__text-box {
     position: absolute;
     top: 45%;
@@ -178,13 +178,13 @@
   margin-bottom: 60px; }
   .heading__primary {
     display: block;
-    font-size: 1.8em;
-    letter-spacing: 32px;
+    font-size: 1.4em;
+    letter-spacing: 30px;
     animation: fadeInLeft 1.5s ease-out; }
   .heading__tagline {
     display: block;
-    letter-spacing: 14px;
-    font-size: 0.7em;
+    letter-spacing: 13px;
+    font-size: 0.65em;
     animation: fadeInRight 1.5s ease-out; }
 
 .feature-box {
@@ -201,9 +201,11 @@
     background-image: linear-gradient(120deg, #063264, rgba(0, 198, 255, 0.7));
     margin-bottom: 20px; }
   .feature-box__headline {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    min-height: 50px; }
   .feature-box__paragraph {
-    font-weight: 300; }
+    font-weight: 300;
+    min-height: 150px; }
   .feature-box:hover {
     transform: translateY(-30px) scale(1.1); }
 
@@ -240,23 +242,24 @@
   visibility: hidden;
   transform: translateY(-40px); }
 
-.about {
+#about {
   background-color: #eee;
   padding: 15rem 0;
   margin-top: -10vh; }
 
-.features {
+#features {
   padding: 20rem 0;
-  background-image: linear-gradient(120deg, #063264, rgba(0, 198, 255, 0.7)), url("../img/hero.jpg");
+  background-image: linear-gradient(120deg, #063264, rgba(0, 198, 255, 0.7)), url("../img/features.jpg");
   background-size: cover; }
 
-.booking {
+#booking {
   padding: 15rem 0;
   background-image: linear-gradient(120deg, #00C6FF, #0B5ABC); }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../img/hero.jpg");
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../img/form.jpg");
   background-size: cover;
+  background-position: center;
   border-radius: 3px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   height: 40rem; }
@@ -283,10 +286,10 @@ body {
   margin-bottom: 8rem; }
 
 .margin-bottom-medium {
-  margin-bottom: 4rem; }
+  margin-bottom: 3rem; }
 
 .margin-bottom-small {
   margin-bottom: 0.5rem; }
 
 .margin-top-medium {
-  margin-top: 1.5rem; }
+  margin-top: 2rem; }

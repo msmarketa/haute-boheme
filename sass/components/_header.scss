@@ -18,7 +18,7 @@
         left: 40px;
 
         img {
-            width: 200px;
+            width: 100px;
         }
     }
 
@@ -39,15 +39,15 @@
 
     &__primary {
         display: block;
-        font-size: 1.8em;
-        letter-spacing: 32px;
+        font-size: 1.4em;
+        letter-spacing: 30px;
         animation: fadeInLeft 1.5s ease-out;
     }
 
     &__tagline {
         display: block;
-        letter-spacing: 14px;
-        font-size: 0.7em;
+        letter-spacing: 13px;
+        font-size: 0.65em;
         animation: fadeInRight 1.5s ease-out;
     }
 }

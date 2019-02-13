@@ -19,10 +19,12 @@
 
     &__headline {
         text-transform: uppercase;
+        min-height: 50px;
     }
 
     &__paragraph {
         font-weight: $font-light;
+        min-height: 150px;
     }
 
     &:hover {
