@@ -115,7 +115,7 @@
   position: relative; }
   .photogroup__photo {
     width: 55%;
-    box-shadow: 0 15px 40px gray;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
     position: absolute;
     transition: all 0.2s;
@@ -140,7 +140,7 @@
         outline: 10px solid #063264; }
     .photogroup__photo:hover {
       transform: scale(1.1) translateY(-5px);
-      box-shadow: 0 25px 40px #999999;
+      box-shadow: 0 30px 40px rgbs(#000, 0.6);
       z-index: 10; }
   .photogroup:hover .photogroup__photo:not(:hover) {
     transform: scale(0.95); }
@@ -212,6 +212,20 @@
   background-image: linear-gradient(120deg, #063264, rgba(0, 198, 255, 0.7)), url("../img/hero.jpg");
   background-size: cover; }
 
+.booking {
+  padding: 15rem 0;
+  background-image: linear-gradient(120deg, #00C6FF, #0B5ABC); }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../img/hero.jpg");
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  height: 40rem; }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
+
 * {
   margin: 0;
   padding: 0;
@@ -229,6 +243,9 @@ body {
 
 .margin-bottom-large {
   margin-bottom: 8rem; }
+
+.margin-bottom-medium {
+  margin-bottom: 4rem; }
 
 .margin-bottom-small {
   margin-bottom: 0.5rem; }

@@ -3,7 +3,7 @@
 
     &__photo {
         width: 55%;
-        box-shadow: 0 15px 40px lighten($color-black, 50%);
+        box-shadow: 0 15px 40px rgba($color-black, 0.5);
         border-radius: 2px;
         position: absolute;
         transition: all 0.2s;
@@ -41,7 +41,7 @@
 
         &:hover {
             transform: scale(1.1) translateY(-5px);
-            box-shadow: 0 25px 40px lighten($color-black, 60%);
+            box-shadow: 0 30px 40px rgbs($color-black, 0.6);
             z-index: 10;
         }
     }

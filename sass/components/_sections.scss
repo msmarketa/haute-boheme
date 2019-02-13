@@ -13,3 +13,30 @@
         url('../img/hero.jpg');
     background-size: cover;
 }
+
+.booking {
+    padding: 15rem 0;
+    background-image: linear-gradient(
+            120deg,
+            $color-primary-light,
+            $color-primary);
+}
+
+.book {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 50%,
+        transparent 50%),
+        url('../img/hero.jpg');
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 15px 30px rgba($color-black, 0.2);
+
+    height: 40rem;
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+    }
+}
