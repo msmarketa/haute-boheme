@@ -267,6 +267,14 @@
     width: 50%;
     padding: 6rem; }
 
+.footer {
+  background-color: #222; }
+  .footer__logo-box {
+    text-align: center;
+    padding: 5rem; }
+  .footer__logo {
+    width: 150px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -291,5 +299,8 @@ body {
 .margin-bottom-small {
   margin-bottom: 0.5rem; }
 
+.margin-top-large {
+  margin-top: 8rem; }
+
 .margin-top-medium {
-  margin-top: 2rem; }
+  margin-top: 3rem; }

@@ -41,3 +41,16 @@
         padding: 6rem;
     }
 }
+
+.footer {
+    background-color: $color-grey-dark;
+
+    &__logo-box {
+        text-align: center;
+        padding: 5rem;
+    }
+
+    &__logo {
+        width: 150px;
+    }
+}
