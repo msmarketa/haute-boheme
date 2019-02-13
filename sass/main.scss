@@ -1,13 +1,14 @@
 @import 'util/variables';
 @import 'util/mixins';
 @import 'util/animations';
-@import 'util/buttons';
 @import 'util/grid';
 @import 'util/typography';
 
+@import 'components/buttons';
 @import 'components/photogroup';
 @import 'components/header';
 @import 'components/feature-box';
+@import 'components/form';
 @import 'components/sections';
 
 * {

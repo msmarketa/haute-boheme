@@ -18,6 +18,12 @@
         transform: translateY(-1px);
     }
 
+    &-primary {
+        background-color: $color-primary;
+        color: $color-white;
+        font-weight: $font-light;
+    }
+
     &-white {
         background-color: $color-white;
         color: $color-text;
