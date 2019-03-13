@@ -14,11 +14,11 @@
 
     &__logo-box {
         position: absolute;
-        top: 40px;
-        left: 40px;
+        top: 4rem;
+        left: 4rem;
 
         img {
-            width: 100px;
+            width: 10rem;
         }
     }
 
@@ -35,29 +35,29 @@
     color: $color-white;
     text-transform: uppercase;
     font-weight: $font-regular;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 
-    &__primary {
+    &-primary {
         display: block;
-        font-size: 1.4em;
-        letter-spacing: 30px;
+        font-size: 5rem;
+        letter-spacing: 3rem;
         animation: fadeInLeft 1.5s ease-out;
 
         @include respond(phone) {
-            font-size: 1.2em;
-            letter-spacing: 15px;
+            font-size: 2.5em;
+            letter-spacing: 1.5rem;
         }
     }
 
-    &__tagline {
+    &-tagline {
         display: block;
-        letter-spacing: 13px;
-        font-size: 0.65em;
+        letter-spacing: 1.3rem;
+        font-size: 2.5rem;
         animation: fadeInRight 1.5s ease-out;
 
         @include respond(phone) {
-            font-size: 0.5em;
-            letter-spacing: 10px;
+            font-size: 1.5rem;
+            letter-spacing: 1.2rem;
         }
     }
 }

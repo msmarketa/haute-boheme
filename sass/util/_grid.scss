@@ -6,6 +6,11 @@
         margin-bottom: $gutter-horizontal;
     }
 
+    @include respond(tab) {
+        max-width: 50rem;
+        padding: 0 3rem;
+    }
+
     @include clearfix;
 
     %col {
@@ -14,18 +19,18 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
 
-            @include respond(screen) {
+            @include respond(tab) {
                 margin-right: 0;
                 margin-bottom: 2rem;
             }
         }
 
-        @include respond(screen) {
+        @include respond(tab) {
             width: 40% !important;
             margin: 0 5%;
         }
 
-        @include respond(phone) {
+        @include respond(tab) {
             width: 90% !important;
             margin: 0 5%;
         }
@@ -34,10 +39,6 @@
     .col-1-of-2 {
         @extend %col;
         width: calc((100% - #{$gutter-horizontal}) / 2);
-
-        @include respond(tab) {
-            width: 90% !important;
-        }
     }
 
     .col-1-of-3 {

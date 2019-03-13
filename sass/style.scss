@@ -17,12 +17,17 @@
     box-sizing: border-box;
 }
 
+html {
+    // default root size 16px = 100% ›› 10px
+    font-size: 62.5%;
+}
+
 body {
     font-family: 'Nunito', sans-serif;
-    font-size: 20px;
+    // font-size: 20px;
     font-weight: $font-regular;
     color: $color-text;
-    padding: 30px;
+    padding: 3rem;
 
     @include respond(tab) {
         padding: 0;

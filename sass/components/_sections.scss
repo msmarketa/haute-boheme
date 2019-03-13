@@ -1,3 +1,8 @@
+section,
+footer {
+    font-size: 1.6rem;
+}
+
 #about {
     background-color: $color-grey-light;
     padding: 15rem 0;
@@ -87,10 +92,10 @@
     }
 
     &__logo {
-        width: 150px;
+        width: 15rem;
 
         @include respond(phone) {
-            width: 100px;
+            width: 10rem;
         }
     }
 }
