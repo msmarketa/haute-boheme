@@ -28,23 +28,23 @@
 
             &-1 {
                 background: linear-gradient(
-                    -45deg,
-                    $color-primary-dark,
-                    rgba($color-primary-light, 0.7));
+                    to right bottom,                
+                    $color-primary-light,
+                    $color-primary-dark);
             }
 
             &-2 {
                 background: linear-gradient(
-                    -45deg,
-                    $color-secondary-dark,
-                    rgba($color-secondary-light, 0.7));
+                    to right bottom,                
+                    $color-secondary-light,
+                    $color-secondary-dark);
             }
 
             &-3 {
                 background: linear-gradient(
-                    -45deg,
-                    $color-tertiary-dark,
-                    rgba($color-tertiary-light, 0.7));
+                    to right bottom,                
+                    $color-tertiary-light,
+                    $color-tertiary-dark);
             }
         }
     }
@@ -60,31 +60,120 @@
     // FRONT SIDE STYLING
     &__picture {
         background-size: cover;
-        height: 20rem;
+        height: 25rem;
         background-blend-mode: screen;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         &-1 {
             background-image: linear-gradient(
-                -45deg,
-                $color-primary-dark,
-                rgba($color-primary-light, 0.7)), 
+                to right bottom,                
+                $color-primary-light,
+                $color-primary-dark), 
                 url('../img/group-p1.jpg');
         }
 
         &-2 {
             background-image: linear-gradient(
-                -45deg,
-                $color-secondary-dark,
-                rgba($color-secondary-light, 0.7)),
+                to right bottom,
+                $color-secondary-light,
+                $color-secondary-dark),
                 url('../img/group-p2.jpg');
         }
 
         &-3 {
             background-image: linear-gradient(
-                -45deg,
-                $color-tertiary-dark,
-                rgba($color-tertiary-light, 0.7)),
+                to right bottom,
+                $color-tertiary-light,
+                $color-tertiary-dark),
                 url('../img/group-p3.jpg');
         }
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: $font-regular;
+        line-height: 4rem;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        width: 75%;
+        position: absolute;
+        top: 15rem;
+        right: 1rem;
+    }
+
+    &__heading-span {
+        padding: 0.5rem 1rem;
+
+        // correct padding on different lines of text
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &-1 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary-light, 0.85),
+                rgba($color-primary-dark, 0.85));
+        }
+        
+        &-2 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-secondary-light, 0.85),
+                rgba($color-secondary-dark, 0.85));
+        }
+
+        &-3 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-tertiary-light, 0.85),
+                rgba($color-tertiary-dark, 0.85));
+        }
+    }
+
+    &__details {
+        padding: 1.5rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light;
+                }
+            }
+        }
+    }
+
+    // BACK SIDE STYLING
+    &__cta {
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        text-align: center;
+    }
+
+    &__price-box {
+        color: $color-white;
+        margin-bottom: 8rem;
+        font-weight: $font-extra-light;
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        
     }
 }
