@@ -11,6 +11,7 @@
 @import 'components/feature-box';
 @import 'components/form';
 @import 'components/sections';
+@import 'components/story';
 
 * {
     margin: 0;
@@ -44,7 +45,7 @@ body {
 }
 
 .margin-bottom-medium {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 
     @include respond(tab) {
         margin-bottom: 1rem;
@@ -52,7 +53,7 @@ body {
 }
 
 .margin-bottom-small {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .margin-top-large {
@@ -60,7 +61,7 @@ body {
 }
 
 .margin-top-medium {
-    margin-top: 3rem;
+    margin-top: 2rem;
 
     @include respond(tab) {
         margin-bottom: 1rem;
