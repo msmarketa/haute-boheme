@@ -22,7 +22,7 @@
 
 html {
     // default root size 16px = 100% ›› 10px
-    font-size: 62.5%;
+    font-size: $default-font-size;
 }
 
 body {
@@ -67,4 +67,8 @@ body {
     @include respond(tab) {
         margin-bottom: 1rem;
     }
+}
+
+.margin-top-small {
+    margin-top: 1rem;
 }
