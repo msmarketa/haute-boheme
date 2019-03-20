@@ -93,19 +93,4 @@ footer {
     }
 }
 
-.footer {
-    background-color: $color-grey-dark;
 
-    &__logo-box {
-        text-align: center;
-        padding: 5rem;
-    }
-
-    &__logo {
-        width: 15rem;
-
-        @include respond(phone) {
-            width: 10rem;
-        }
-    }
-}
