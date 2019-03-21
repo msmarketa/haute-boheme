@@ -4,16 +4,17 @@
 @import 'util/grid';
 @import 'util/typography';
 
+@import 'components/bg-video';
 @import 'components/buttons';
 @import 'components/card';
-@import 'components/photogroup';
-@import 'components/header';
 @import 'components/feature-box';
+@import 'components/footer';
 @import 'components/form';
+@import 'components/header';
+@import 'components/navigation';
+@import 'components/photogroup';
 @import 'components/sections';
 @import 'components/story';
-@import 'components/bg-video';
-@import 'components/footer';
 
 * {
     margin: 0;
