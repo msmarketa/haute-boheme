@@ -563,13 +563,12 @@
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -20rem;
   z-index: 150;
   -webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   opacity: 0;
-  width: 0%;
-  visibility: none; }
+  width: 0%; }
 
 .navigation__list {
   position: absolute;
@@ -613,7 +612,8 @@
 
 .navigation__checkbox:checked ~ .navigation__nav {
   width: 100%;
-  opacity: 1; }
+  opacity: 1;
+  left: 0; }
 
 .navigation__icon {
   position: relative;
