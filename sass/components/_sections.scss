@@ -17,14 +17,6 @@ footer {
             rgba($color-primary-light, 0.7)),
         url('../img/features.jpg');
     background-size: cover;
-
-    @include respond(tab) {
-        padding: 20rem 0 10rem 0;
-    }
-
-    @include respond(phone) {
-        padding: 10rem 0 10rem 0;
-    }
 }
 
 #tours {
@@ -43,10 +35,6 @@ footer {
             120deg,
             $color-primary-light,
             $color-primary);
-
-    @include respond(tab) {
-        padding: 0;
-    }
 }
 
 .book {
@@ -61,35 +49,10 @@ footer {
     border-radius: 3px;
     box-shadow: 0 15px 30px rgba($color-black, 0.2);
 
-    @include respond(tab) {
-        background-image: linear-gradient(
-            105deg,
-            rgba($color-white, 0.9) 0%,
-            rgba($color-white, 0.9) 80%,
-            transparent 80%),
-            url('../img/form.jpg');
-    }
-
-    @include respond(phone) {
-        background-image: linear-gradient(
-            105deg,
-            rgba($color-white, 0.9) 0%,
-            rgba($color-white, 0.9) 100%),
-            url('../img/form.jpg');
-    }
 
     &__form {
         width: 50%;
         padding: 6rem;
-
-        @include respond(tab) {
-            width: 90%;
-            padding: 2rem;
-        }
-
-        @include respond(phone) {
-            width: 100%;
-        }
     }
 }
 

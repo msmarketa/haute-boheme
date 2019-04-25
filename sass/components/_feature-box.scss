@@ -7,10 +7,6 @@
     transition: transform 0.3s;
     max-height: 45rem;
 
-    @include respond(tab) {
-        padding: 1.5rem 1rem;
-    }
-
     &__icon {
         font-size: 5rem;
         color: transparent;
@@ -20,10 +16,6 @@
             $color-primary-dark,
             rgba($color-primary-light, 0.7));
         margin-bottom: 2rem;
-
-        @include respond(tab) {
-            margin-bottom: 1rem;
-        }
     }
 
     &__headline {
@@ -34,11 +26,6 @@
     &__paragraph {
         font-weight: $font-light;
         min-height: 15rem;
-
-        @include respond(tab) {
-            min-height: 10rem;
-            font-size: 0.8em;
-        }
     }
 
     &:hover {
