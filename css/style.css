@@ -30,12 +30,10 @@
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 6rem; }
-    @media (max-width: 56.25em) {
-      .row:not(:last-child) {
-        margin-bottom: 4rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 50rem; } }
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: '';
     display: table;
@@ -43,11 +41,11 @@
   .row .col-1-of-2, .row .col-1-of-3, .row .col-2-of-3, .row .col-1-of-4, .row .col-2-of-4, .row .col-3-of-4 {
     float: left; }
     .row .col-1-of-2:not(:last-child), .row .col-1-of-3:not(:last-child), .row .col-2-of-3:not(:last-child), .row .col-1-of-4:not(:last-child), .row .col-2-of-4:not(:last-child), .row .col-3-of-4:not(:last-child) {
-      margin-right: 8rem; }
+      margin-right: 6rem; }
       @media (max-width: 56.25em) {
         .row .col-1-of-2:not(:last-child), .row .col-1-of-3:not(:last-child), .row .col-2-of-3:not(:last-child), .row .col-1-of-4:not(:last-child), .row .col-2-of-4:not(:last-child), .row .col-3-of-4:not(:last-child) {
           margin-right: 0;
-          margin-bottom: 4rem; } }
+          margin-bottom: 2rem; } }
     @media (max-width: 56.25em) {
       .row .col-1-of-2, .row .col-1-of-3, .row .col-2-of-3, .row .col-1-of-4, .row .col-2-of-4, .row .col-3-of-4 {
         width: 100% !important; } }
@@ -279,23 +277,39 @@
   background-color: #222;
   padding-bottom: 8rem;
   font-size: 1.5rem; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
     padding: 5rem; }
+    @media (max-width: 56.25em) {
+      .footer__logo-box {
+        padding: 0 0 3rem 0; } }
   .footer__logo {
     width: 15rem;
     opacity: 0.2; }
     @media (max-width: 37.5em) {
       .footer__logo {
         width: 10rem; } }
-  .footer__navigation, .footer__copyright {
+  .footer__navigation {
     border-top: 1px solid #565656;
     padding-top: 2rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
   .footer__copyright {
+    border-top: 1px solid #565656;
+    padding-top: 2rem;
     width: 85%;
     float: right;
     text-align: justify; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        text-align: center; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -657,9 +671,8 @@
   .popup__close:hover {
     color: #2883ad; }
 
-section,
-footer {
-  font-size: 1.6rem; }
+section {
+  font-size: 2rem; }
 
 #about {
   background-color: #eee;

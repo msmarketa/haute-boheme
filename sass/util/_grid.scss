@@ -4,14 +4,11 @@
 
     &:not(:last-child) {
         margin-bottom: $gutter-horizontal;
-
-        @include respond(tab) {
-            margin-bottom: $gutter-horizontal-small;
-        }
     }
 
     @include respond(tab) {
         max-width: 50rem;
+        padding: 0 3rem;
     }
 
     @include clearfix;
@@ -20,7 +17,7 @@
         float: left;
 
         &:not(:last-child) {
-            margin-right: $gutter-vertical;
+            margin-right: $gutter-horizontal;
 
             @include respond(tab) {
                 margin-right: 0;

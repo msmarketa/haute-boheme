@@ -3,9 +3,17 @@
     padding-bottom: 8rem;
     font-size: 1.5rem;
 
+    @include respond(tab) {
+        padding: 8rem 0;
+    }
+
     &__logo-box {
         text-align: center;
         padding: 5rem;
+
+        @include respond(tab) {
+            padding: 0 0 3rem 0;
+        }
     }
 
     &__logo {
@@ -17,17 +25,28 @@
         }
     }
 
-    &__navigation,
-    &__copyright {
+    &__navigation {
         border-top: 1px solid $color-text;
         padding-top: 2rem;
         display: inline-block;
+
+        @include respond(tab) {
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__copyright {
+        border-top: 1px solid $color-text;
+        padding-top: 2rem;
         width: 85%;
         float: right;
         text-align: justify;
+
+        @include respond(tab) {
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__list {
