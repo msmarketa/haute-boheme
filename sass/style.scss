@@ -50,6 +50,10 @@ body {
 
 .margin-bottom-large {
     margin-bottom: 8rem;
+
+    @include respond(phone) {
+        margin-bottom: 4rem;
+    }
 }
 
 .margin-bottom-medium {
@@ -62,6 +66,10 @@ body {
 
 .margin-top-large {
     margin-top: 8rem;
+
+    @include respond(phone) {
+        margin-top: 4rem;
+    }
 }
 
 .margin-top-medium {

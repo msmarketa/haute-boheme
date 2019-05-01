@@ -1,12 +1,17 @@
 .row {
     max-width: $grid-width;
     margin: 0 auto;
+    padding: 0 6rem;
 
     &:not(:last-child) {
         margin-bottom: $gutter-horizontal;
     }
 
     @include respond(tab) {
+        max-width: 90rem;
+    }
+
+    @include respond(phone) {
         max-width: 50rem;
         padding: 0 3rem;
     }
