@@ -5,7 +5,17 @@
     border-radius: 3px;
     box-shadow: 0 15px 30px rgba($color-black, 0.2);
     transition: transform 0.3s;
-    max-height: 45rem;
+    min-height: 45rem;
+    margin: 3rem 0;
+
+    @include respond(tab) {
+        margin: 2rem 0;
+        min-height: 30rem;
+    }
+
+    @include respond(phone) {
+        margin: 1rem 0;
+    }
 
     &__icon {
         font-size: 5rem;
@@ -16,6 +26,10 @@
             $color-primary-dark,
             rgba($color-primary-light, 0.7));
         margin-bottom: 2rem;
+
+        @include respond(tab) {
+            margin-bottom: 0;
+        }
     }
 
     &__headline {
@@ -25,7 +39,6 @@
 
     &__paragraph {
         font-weight: $font-light;
-        min-height: 15rem;
     }
 
     &:hover {

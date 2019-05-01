@@ -4,6 +4,10 @@
     position: relative;
     height: 50rem;
 
+    @include respond(tab) {
+        margin-bottom: 2rem;
+    }
+
     &__side {
         color: $color-text;
         height: 50rem;
@@ -133,11 +137,16 @@
 
     &__details {
         padding: 1.5rem;
+        font-size: 1.8rem;
 
         ul {
             list-style: none;
             width: 80%;
             margin: 0 auto;
+
+            @include respond(tab) {
+                width: 90%;
+            }
 
             li {
                 text-align: center;
