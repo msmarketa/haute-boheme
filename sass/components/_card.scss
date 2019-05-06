@@ -2,17 +2,13 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 50rem;
-
-    @include respond(tab) {
-        margin-bottom: 2rem;
-    }
+    height: 52rem;
 
     &__side {
         color: $color-text;
-        height: 50rem;
-        
+        height: 52rem;
         border-radius: 3px;
+        
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
         overflow: hidden;
 
@@ -64,7 +60,7 @@
     // FRONT SIDE STYLING
     &__picture {
         background-size: cover;
-        height: 25rem;
+        height: 23rem;
         background-blend-mode: screen;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
@@ -102,7 +98,7 @@
         color: $color-white;
         width: 75%;
         position: absolute;
-        top: 15rem;
+        top: 13rem;
         right: 1rem;
     }
 
@@ -136,17 +132,12 @@
     }
 
     &__details {
-        padding: 1.5rem;
-        font-size: 1.8rem;
+        padding: 3rem;
 
         ul {
             list-style: none;
             width: 80%;
             margin: 0 auto;
-
-            @include respond(tab) {
-                width: 90%;
-            }
 
             li {
                 text-align: center;
@@ -180,6 +171,53 @@
 
     &__price-value {
         font-size: 6rem;
-        
+        font-weight: $font-extra-light;
+    }
+
+    // RESPONSIVE DESIGN
+    @include respond(tab) {
+        height: auto;
+        margin-bottom: 2rem;
+        border-radius: 3px;
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    
+        &__side {
+            height: auto;
+            position: relative;
+            box-shadow: none;
+            // border-radius: 0;
+    
+            &-back {
+                transform: rotateY(0deg);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+    
+        &:hover &__side-front {
+            transform: rotateY(0deg);
+        }
+
+        &__side-back {
+            border-top-right-radius: 0px;
+        }
+    
+        // BACK SIDE STYLING
+        &__cta {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0);
+            width: 100%;
+            padding: 6rem 3rem 3rem 3rem;
+        }
+    
+        &__price-box {
+            margin-bottom: 3rem;
+        }
+    
+        &__price-value {
+            font-size: 6rem;
+        }
     }
 }
