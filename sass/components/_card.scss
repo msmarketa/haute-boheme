@@ -8,6 +8,7 @@
         color: $color-text;
         height: 52rem;
         border-radius: 3px;
+        font-size: 1.8rem;
         
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
         overflow: hidden;
@@ -70,6 +71,14 @@
                 $color-primary-light,
                 $color-primary-dark), 
                 url('../img/group-p1.jpg');
+
+            @media (min-resolution: 192dpi) {
+                background-image: linear-gradient(
+                    to right bottom,                
+                    $color-primary-light,
+                    $color-primary-dark), 
+                    url('../img/group-p1-large.jpg');
+            }
         }
 
         &-2 {
@@ -78,6 +87,14 @@
                 $color-secondary-light,
                 $color-secondary-dark),
                 url('../img/group-p2.jpg');
+            
+            @media (min-resolution: 192dpi) {
+                background-image: linear-gradient(
+                    to right bottom,
+                    $color-secondary-light,
+                    $color-secondary-dark),
+                    url('../img/group-p2-large.jpg');
+            }
         }
 
         &-3 {
@@ -86,6 +103,14 @@
                 $color-tertiary-light,
                 $color-tertiary-dark),
                 url('../img/group-p3.jpg');
+            
+            @media (min-resolution: 192dpi) {
+                background-image: linear-gradient(
+                    to right bottom,
+                    $color-tertiary-light,
+                    $color-tertiary-dark),
+                    url('../img/group-p3-large.jpg');
+            }
         }
     }
 
@@ -132,7 +157,7 @@
     }
 
     &__details {
-        padding: 3rem;
+        padding: 3rem 0;
 
         ul {
             list-style: none;

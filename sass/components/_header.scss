@@ -5,9 +5,25 @@
             120deg,
             $color-primary-dark,
             rgba($color-primary-light, 0.7)),
-        url('../img/hero.jpg');
+        url('../img/hero-small.jpg');
     background-size: cover;
     background-position: top;
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em) {
+        background-image: linear-gradient(
+            120deg,
+            $color-primary-dark,
+            rgba($color-primary-light, 0.7)),
+        url('../img/hero.jpg');
+    }
+
+    @include respond(screen) {
+        background-image: linear-gradient(
+            120deg,
+            $color-primary-dark,
+            rgba($color-primary-light, 0.7)),
+        url('../img/hero.jpg');
+    }
 
     /* Image crop */
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 50% 100%, 0 85vh);
