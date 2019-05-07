@@ -266,21 +266,21 @@
     .card__picture-1 {
       background-image: -webkit-gradient(linear, left top, right bottom, from(#66deff), to(#063264)), url("../img/group-p1.jpg");
       background-image: linear-gradient(to right bottom, #66deff, #063264), url("../img/group-p1.jpg"); }
-      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5rem) {
         .card__picture-1 {
           background-image: -webkit-gradient(linear, left top, right bottom, from(#66deff), to(#063264)), url("../img/group-p1-large.jpg");
           background-image: linear-gradient(to right bottom, #66deff, #063264), url("../img/group-p1-large.jpg"); } }
     .card__picture-2 {
       background-image: -webkit-gradient(linear, left top, right bottom, from(#bdc3c7), to(#2c3e50)), url("../img/group-p2.jpg");
       background-image: linear-gradient(to right bottom, #bdc3c7, #2c3e50), url("../img/group-p2.jpg"); }
-      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5rem) {
         .card__picture-2 {
           background-image: -webkit-gradient(linear, left top, right bottom, from(#bdc3c7), to(#2c3e50)), url("../img/group-p2-large.jpg");
           background-image: linear-gradient(to right bottom, #bdc3c7, #2c3e50), url("../img/group-p2-large.jpg"); } }
     .card__picture-3 {
       background-image: -webkit-gradient(linear, left top, right bottom, from(#a8c0ff), to(#3f2b96)), url("../img/group-p3.jpg");
       background-image: linear-gradient(to right bottom, #a8c0ff, #3f2b96), url("../img/group-p3.jpg"); }
-      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5rem) {
         .card__picture-3 {
           background-image: -webkit-gradient(linear, left top, right bottom, from(#a8c0ff), to(#3f2b96)), url("../img/group-p3-large.jpg");
           background-image: linear-gradient(to right bottom, #a8c0ff, #3f2b96), url("../img/group-p3-large.jpg"); } }
@@ -556,7 +556,7 @@
   /* Image crop */
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 50% 100%, 0 85vh);
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 50% 100%, 0 85vh); }
-  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em) {
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5rem) {
     .header {
       background-image: linear-gradient(120deg, #063264, rgba(102, 222, 255, 0.7)), url("../img/hero.jpg"); } }
   @media (min-width: 112.5em) {
@@ -927,7 +927,7 @@ section {
 #features {
   background-image: linear-gradient(120deg, #063264, rgba(102, 222, 255, 0.7)), url("../img/features-small.jpg");
   background-size: cover; }
-  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em) {
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5rem) {
     #features {
       background-image: linear-gradient(120deg, #063264, rgba(102, 222, 255, 0.7)), url("../img/features.jpg"); } }
   @media (max-width: 56.25em) {
@@ -996,15 +996,20 @@ section {
       -webkit-transform: skewX(0deg);
       transform: skewX(0deg); } }
   .story__shape {
-    position: relative;
     width: 15rem;
     height: 15rem;
+    position: relative;
     float: left;
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
+    overflow: hidden;
+    border-radius: 50%;
     -webkit-transform: translateX(-2rem) skewX(12deg);
     transform: translateX(-2rem) skewX(12deg); }
+    @supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
+      .story__shape {
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        border-radius: none; } }
     @media (max-width: 37.5em) {
       .story__shape {
         -webkit-transform: translateX(-2rem) skewX(0deg);
