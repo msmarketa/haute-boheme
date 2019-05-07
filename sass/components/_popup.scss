@@ -27,6 +27,11 @@
     &__left {
         width: 33.3333%;
         display: table-cell;
+
+        @include respond(tab) {
+            width: 100%;
+            display: inline;
+        }
     }
 
     &__right {
@@ -34,11 +39,24 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include respond(tab) {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
     }
 
     &__image {
         display: block;
         width: 100%;
+
+        @include respond(tab) {
+            width: 50%;
+            display: inline-block;
+            float: left;
+            margin-bottom: 3rem;
+        }
     }
 
     &__text {
@@ -57,6 +75,15 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
+
+        @include respond(tab) {
+            text-align: left;
+        }
+
+        @include respond(phone) {
+            column-count: 1;
+            -moz-column-count: 1;
+        }
     }
 
     &:target {
@@ -80,6 +107,10 @@
             text-decoration: none;
             display: inline-block;
             transition: all 0.2s;
+
+            @include respond(tab) {
+                color: $color-white;
+            }
         }
 
         &:hover {
