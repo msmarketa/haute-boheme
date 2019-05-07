@@ -264,12 +264,12 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture-1 {
-      background-image: -webkit-gradient(linear, left top, right bottom, from(#66deff), to(#063264)), url("../img/group-p1.jpg");
-      background-image: linear-gradient(to right bottom, #66deff, #063264), url("../img/group-p1.jpg"); }
+      background-image: -webkit-gradient(linear, left top, right bottom, from(#66deff), to(#063264)), url("../img/tour-p1.jpg");
+      background-image: linear-gradient(to right bottom, #66deff, #063264), url("../img/tour-p1.jpg"); }
       @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5rem) {
         .card__picture-1 {
-          background-image: -webkit-gradient(linear, left top, right bottom, from(#66deff), to(#063264)), url("../img/group-p1-large.jpg");
-          background-image: linear-gradient(to right bottom, #66deff, #063264), url("../img/group-p1-large.jpg"); } }
+          background-image: -webkit-gradient(linear, left top, right bottom, from(#66deff), to(#063264)), url("../img/tour-p1-2x.jpg");
+          background-image: linear-gradient(to right bottom, #66deff, #063264), url("../img/tour-p1-2x.jpg"); } }
     .card__picture-2 {
       background-image: -webkit-gradient(linear, left top, right bottom, from(#bdc3c7), to(#2c3e50)), url("../img/group-p2.jpg");
       background-image: linear-gradient(to right bottom, #bdc3c7, #2c3e50), url("../img/group-p2.jpg"); }
