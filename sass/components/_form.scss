@@ -25,6 +25,10 @@
                 border-bottom: 3px solid $color-red;
             }
         }
+
+        @include respond(tab) {
+            width: 100%;
+        }
     }
 
     &__label {
@@ -43,6 +47,11 @@
     &__radio-group {
         width: 49%;
         display: inline-block;
+
+        @include respond(phone) {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
     }
 
     &__radio-input {

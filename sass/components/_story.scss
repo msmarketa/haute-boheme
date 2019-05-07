@@ -1,13 +1,22 @@
 .story {
     width: 75%;
     margin: 0 auto;
-    // margin-bottom: 5rem;
     padding: 6rem;
     padding-left: 9rem;
     box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
     background-color: rgba($color-white, 0.6);
     border-radius: 3px;
     transform: skewX(-12deg);
+
+    @include respond(tab) {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 6rem;
+    }
+
+    @include respond(phone) {
+        transform: skewX(0deg);
+    }
 
     &__shape {
         position: relative;
@@ -22,6 +31,10 @@
         clip-path: circle(50% at 50% 50%);
 
         transform: translateX(-2rem) skewX(12deg);
+
+        @include respond(phone) {
+            transform: translateX(-2rem) skewX(0deg);
+        }
     }
 
     &__image {
@@ -33,6 +46,10 @@
 
     &__text {
         transform: skewX(12deg);
+
+        @include respond(phone) {
+            transform: skewX(0deg);
+        }
     }
 
     &__caption {

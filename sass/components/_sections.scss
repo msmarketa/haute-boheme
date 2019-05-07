@@ -55,9 +55,9 @@ section {
         padding: 10rem 0;
     }
 
-    @include respond(phone) {
-        padding: 0;
-    }
+    // @include respond(phone) {
+    //     padding: 0;
+    // }
 }
 
 .book {
@@ -72,10 +72,33 @@ section {
     border-radius: 3px;
     box-shadow: 0 15px 30px rgba($color-black, 0.2);
 
+    @include respond(tabLand) {
+        background-image: linear-gradient(
+            105deg,
+            rgba($color-white, 0.9) 0%,
+            rgba($color-white, 0.9) 65%,
+            transparent 65%),
+            url('../img/form.jpg');
+    }
+
+    @include respond(tab) {
+        background-image: linear-gradient(105deg,
+            rgba($color-white, 0.9) 0%,
+            rgba($color-white, 0.9) 100%),
+            url('../img/form.jpg');
+    }
 
     &__form {
         width: 50%;
         padding: 6rem;
+
+        @include respond(tabLand) {
+            width: 65%;
+        }
+
+        @include respond(tab) {
+            width: 100%;
+        }
     }
 }
 
