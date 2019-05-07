@@ -8,7 +8,7 @@
 
         <link rel="stylesheet" href="css/icons.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <!-- <link rel="icon" type="image/x-icon" href="img/favicon.ico"> -->
 
         <title>HAUTE BOHÈME</title>
     </head>
@@ -33,7 +33,7 @@
 
         <header class="header">
             <div class="header__logo-box">
-                <img src="img/logo.png" alt="Haute Bohème logo">
+                <img srcset="img/logo1x.png 1x, img/logo2x.png 2x" src="img/logo2x.png" alt="Haute Bohème logo">
             </div>
 
             <div class="header__text-box">
@@ -75,9 +75,23 @@
                     </div>
                     <div class="col-1-of-2">
                         <div class="photogroup">
-                            <img src="img/group-p1.jpg" alt="Photo 1" class="photogroup__photo photogroup__photo-1">
-                            <img src="img/group-p2.jpg" alt="Photo 2" class="photogroup__photo photogroup__photo-2">
-                            <img src="img/group-p3.jpg" alt="Photo 3" class="photogroup__photo photogroup__photo-3">
+                            <img srcset="img/group-p1.jpg 500w, img/group-p1-large.jpg 1000w"
+                                 sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 500px"
+                                 src="img/group-p1.jpg"
+                                 alt="Photo 1"
+                                 class="photogroup__photo photogroup__photo-1"> 
+
+                            <img srcset="img/group-p2.jpg 500w, img/group-p2-large.jpg 1000w"
+                                 sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 500px"
+                                 src="img/group-p2.jpg"
+                                 alt="Photo 2"
+                                 class="photogroup__photo photogroup__photo-2">
+
+                            <img srcset="img/group-p3.jpg 500w, img/group-p3-large.jpg 1000w"
+                                 sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 500px"
+                                 src="img/group-p3.jpg"
+                                 alt="Photo 3"
+                                 class="photogroup__photo photogroup__photo-3">
                         </div>
                     </div>
                 </div>
@@ -316,7 +330,7 @@
         
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo.png" alt="Haute Bohème Logo" class="footer__logo">
+                <img srcset="img/logo1x.png 1x, img/logo2x.png 2x" src="img/logo2x.png" alt="Haute Bohème Logo" class="footer__logo">
                 <h3 class="footer__headline">Haute Bohème</h3>
                 <p class="footer__paragraph">2019</p>
             </div>
