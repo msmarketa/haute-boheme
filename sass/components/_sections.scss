@@ -6,13 +6,10 @@ section {
 #about {
     background-color: $color-grey-light;
     margin-top: -10vh;
-
-    @include respond(tab) {
-        padding: 18rem 0;
-    }
+    padding: 22rem 0 14rem 0;
 
     @include respond(phone) {
-        padding: 18rem 0 13rem 0;
+        padding: 15rem 0 13rem 0;
     }
 }
 
